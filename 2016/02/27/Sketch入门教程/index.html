@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Damion:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Sketch,教程," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="注意：这是一篇译文，如果你够装逼，完全可以浏览原文：Sketch Tutorial for iOS Developers如需转载，请注明出处。谢谢！！！转载地址：http://www.rockerhx.com/2016/02/02/2016-02-02-Sketch-Tutorial-for-iOS-Developers/作为一名iOS开发者，我经历过几个没有设计师的项目，结果就是，痛苦的一逼。做">
+<meta name="keywords" content="Sketch,教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sketch入门教程">
+<meta property="og:url" content="https://ezelkins.github.io/2016/02/27/Sketch入门教程/index.html">
+<meta property="og:site_name" content="Elkins`s private blog">
+<meta property="og:description" content="注意：这是一篇译文，如果你够装逼，完全可以浏览原文：Sketch Tutorial for iOS Developers如需转载，请注明出处。谢谢！！！转载地址：http://www.rockerhx.com/2016/02/02/2016-02-02-Sketch-Tutorial-for-iOS-Developers/作为一名iOS开发者，我经历过几个没有设计师的项目，结果就是，痛苦的一逼。做">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-08T08:24:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sketch入门教程">
+<meta name="twitter:description" content="注意：这是一篇译文，如果你够装逼，完全可以浏览原文：Sketch Tutorial for iOS Developers如需转载，请注明出处。谢谢！！！转载地址：http://www.rockerhx.com/2016/02/02/2016-02-02-Sketch-Tutorial-for-iOS-Developers/作为一名iOS开发者，我经历过几个没有设计师的项目，结果就是，痛苦的一逼。做">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ezelkins.github.io/2016/02/27/Sketch入门教程/"/>
+
+
+
+
+
+  <title>Sketch入门教程 | Elkins`s private blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Elkins`s private blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">升级打怪进阶中...</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-pencil"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ezelkins.github.io/2016/02/27/Sketch入门教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Elkins Zhao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://i.loli.net/2017/09/08/59b23d2489594.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Elkins`s private blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Sketch入门教程</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-27T11:05:13+08:00">
+                2016-02-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design/" itemprop="url" rel="index">
+                    <span itemprop="name">设计</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+
+              
+
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  23
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>注意：这是一篇译文，如果你够装逼，完全可以浏览原文：Sketch Tutorial for iOS Developers<br>如需转载，请注明出处。谢谢！！！<br>转载地址：<a href="http://www.rockerhx.com/2016/02/02/2016-02-02-Sketch-Tutorial-for-iOS-Developers/" target="_blank" rel="external">http://www.rockerhx.com/2016/02/02/2016-02-02-Sketch-Tutorial-for-iOS-Developers/</a><br>作为一名iOS开发者，我经历过几个没有设计师的项目，结果就是，痛苦的一逼。<br>做这种类型的项目，设计是非常重要的，特别是迭代设计。<br>在每个项目最开始的时候，客户其实并不知道自己想要什么。直接堆码之前我们还是有点小小的设计知识更有助于你跟客户撕逼的时候占上风，其实我们只是想更完美，难道不是吗？<br><a id="more"></a><br>这里我更推荐的做法是，迭代原型，而不是先堆码，这才是一个合格码农该做的。<br>但是怎样才能在没有设计师的前提下设计原型，那就必须用到Sketch这货。<br>Sketch是创作Logo和Iconfeel倍儿爽的工具。它是基于矢量图形的，这意味着你在调整图形大小的时候可以不用担心丢失画质。它包含iPhone设备尺寸的画板和一个内置的UIKit模板，你也可以用Sketch来创建迭代设计原型。另外，Sketch还是一个让程序汪能快速上手的工具。<br>在本教程中，你可以学到：</p>
+<ul>
+<li>使用UIKit模板创建一个模型。</li>
+<li>使用矢量工具创建Icon。</li>
+<li>通过组合基本形状制作Icon。</li>
+<li>为Xcode导出图片素材资源。</li>
+</ul>
+<p>而最重要的，你能以开发者的身份来学习这份教程。准备好就可以升级了您的设计技能！Let’s do it！</p>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>首先第一件事情，你需要Sketch。在www.sketchapp.com14天试用版。购买激活需要$99，要什么版本自己看着办。<br>一旦你已经安装了Sketch，打开Sketch，坐下来，放松，吸气，呼气，放屁，然后就可以开始一场盛大之旅了！<br>在下面的章节中，我将指导里在Sketch中挑战各种UI元素来制作图标。请注意，这些都只是出于学习目的，等你自己上手后，完全可以让其狗带，毕竟本教程后面已经不需要这些东东了。<br>正所谓，能动手就憋逼逼，那就不瞎逼逼了，直接开整。</p>
+<h3 id="模板-Templates"><a href="#模板-Templates" class="headerlink" title="模板 - Templates"></a>模板 - Templates</h3><p>iOS的界面设计模板包含一套矢量格式UIKit组件集合。它有一个标签栏，导航栏，表视图，以及更多。您可以使用它创建一套设计原型。<br>操作路径File\New From Template\iOS UI Design，你会看到以下内容：<br>注意这个菜单里也可以选择Android的Material Design设计模板。<br>打开之后你会看到一个包含各种iOS的UI组件的巨大模板。你可以通过在画布上拖拽选择各个控件，你可以通过按住Command，并使用鼠标滚轮进行画布缩放。</p>
+<h3 id="画板-Artboards"><a href="#画板-Artboards" class="headerlink" title="画板 - Artboards"></a>画板 - Artboards</h3><p>你可以在Sketch这个无限大的画布上绘制你想要的任何图形，如果你要展现多个App屏幕的内容，那就要通过画板这个东西。画板组织一个固定的画布图层。当你导出画板，所有的图层将会合并成一个单一的文件。这里可以把它看做成Xcode里一个Storyboard的控制器场景(ViewController Scenes)。<br>通过执行以下步骤来创建一个新的画板：</p>
+<ol>
+<li>拖动画布，移动到一个空白区域。</li>
+<li>从左上方第一个功能按钮Insert，单击选择Artboard。</li>
+<li>在出现的右窗格中，选择iPhone6尺寸。</li>
+</ol>
+<ul>
+<li>注意：你看到的这个教程的UI模板可能会低于你所使用的版本，某些UI控件或者元素的位置可能会有不同，但这并不影响本教程的学习。</li>
+</ul>
+<p>创建之后你应该能看到一个叫做iPhone6的空白画板。默认情况下，新创建的画板将把它周围自由浮动的元素也都包含进去。这样肯定就煞笔了，所以我们还是按照上面的步骤，把默认的模板滚到别的地方，中间留出空白区域用于创建我们所需要的画板。<br>只要你爽，画板你想添加多少都行。Sketch有iPhone，Apple Watch，甚至iPad Pro的尺寸。如果你点错或者不想使用这个画板，选择删除即可，不用想太多。<br>注意：如果你想要任意大小的画板，你可以Insert\Artboard，随便选择一个画板，任意拖动大小即可，至于命名，在左边的文件组织列表栏里把画布所在的分组栏重命名即可。</p>
+<h3 id="复制，粘贴"><a href="#复制，粘贴" class="headerlink" title="复制，粘贴"></a>复制，粘贴</h3><p>现在，你已经有了一个画板，从UIKit模板中拖动这几个控件。一个Navigation Bar，Tab Bar和Table View Cell。<br>虽然你可以复制和粘贴⌘C和⌘V，但这很难预测粘贴后控件出现的位置。所以还是老实点，按住Option键拖动一个控件，在你想要粘贴的地方松开鼠标左键即可。<br>提示：如何使用快捷键⌘D重复前面的动作。使用Option拖拽粘贴与⌘D创建多个副本：</p>
+<ol>
+<li>选择一个控件直接按住Option键拖拽Cell到合适位置。</li>
+<li>接着使用快捷键⌘D创建剩下的Cell。</li>
+</ol>
+<p>如上图演示一样，你有没有吃惊呢？</p>
+<h3 id="基础形状-Basic-Shapes"><a href="#基础形状-Basic-Shapes" class="headerlink" title="基础形状 - Basic Shapes"></a>基础形状 - Basic Shapes</h3><p>首先，新开个文件或者在画布上找个空白的地方插入一个画板：Insert\Artboard<br>接着，我们来搞个图形玩玩，Insert\Shape选择一个可用的形状。<br>实际上，我们可以使用快捷键来插入新的形状。使用快捷键O再按住鼠标左键拖拽即可插入一个椭圆，同样使用快捷键R可以插入一个矩形。下面，罗列出一些常用的图形插入快捷键：</p>
+<ul>
+<li>L：插入直线快捷键</li>
+<li>O：插入椭圆快捷键</li>
+<li>T：插入文本快捷键</li>
+<li>R：插入矩形快捷键</li>
+</ul>
+<p>有了这些，你可以自己动手画个机器人玩玩（过程中你可能需要调整下字体来达到相同的效果）。<br>注意：在插入的时候你可以按住Shift来保证图形绘制成圆形和正方形。</p>
+<h3 id="制作图形-Styling-a-Shape"><a href="#制作图形-Styling-a-Shape" class="headerlink" title="制作图形 - Styling a Shape"></a>制作图形 - Styling a Shape</h3><p>基础的形状虽然好，但是基本上不能给人留下深刻的印象，所以我们可以使用窗口右侧的Inspector栏来编辑图形的一些基础属性，比如颜色，边框半径啥的。这个东西你可以理解为Xcode的Attributes Inspector工具栏。<br>下面罗列的选项你可以多试试，熟悉一下：</p>
+<ul>
+<li>位置/大小 - Position/Size：对于有的图形或者画布很难拖动调整，你就可以利用这个选项调整画布，点击Size选项中间的小锁图标可以锁定比例，在调整大小的时候就会按照你想要的比例等比例缩放。</li>
+<li>半径 - Radius：这个选项应该不用解释太多应该都懂，就是调增矩形边角弧度半径的的一个滑块。</li>
+<li>透明度 - Opacity：看名字也知道了，同上，不多解释，下面会有很多示例。</li>
+<li>填充 - Fills：使用颜色选择器来改变图层的填充色，也可以取消透明填充。</li>
+<li>边框 - Borders：设置边框粗细和边框颜色，也可以完全禁用它。</li>
+</ul>
+<p>小贴士：Sketch自带有色彩拾取器，快捷键是Control-C，这完全是一个内置拾取器，非常方便。<br>有了这些，你可以跟着下面的动态图做学习下药丸的制作：</p>
+<ul>
+<li>使用快捷键R创建一个矩形。</li>
+<li>通过调整矩形边角半径Radius到100让其看起来像药丸。</li>
+</ul>
+<p>就如刚才说的一样，你可以自己试试其他的设置，提升一下熟练度。</p>
+<h3 id="图层列表-Layer-List"><a href="#图层列表-Layer-List" class="headerlink" title="图层列表 - Layer List"></a>图层列表 - Layer List</h3><p>这个功能区图层列表 - Layer List 位于窗口的左边，它包含了图层列表所包含的所有图层文件。图层是重叠起来的，结构类似于Storyboard中的视图层次结构。<br>文件组织层逻辑，你可以把多个图层作为一个单元一起移动，你还可以使用导出把它到合并成一个单一的对象并导出成图片。在图层列表中，组的概念用文件夹图标表示。<br>下列是图层组管理常用的快捷键：</p>
+<ul>
+<li>⌘G：选择多个图层拉进一个组。使用⌘-Shift-G键取消组合。</li>
+<li>⌘R：重命名选定的项目。Sketch里回车键只能展开组，不能重命名哈。</li>
+<li>⌘-Option-Up/Down：快速移动在组内移动图层，可以理解为iOS开发中视图的层级index的移动。</li>
+<li>⌘-Shift-L：锁定图层，让其在画布中不能被选择，即便是在图层列表选择也不能编辑。这个功能将在下一节使用。</li>
+</ul>
+<p>提示：使用这些功能能让我们很好的组织图层结构，就如一个有洁癖的开发需要好的工程目录组织一样，快速定位和爽心悦目是必须的，比如动态图利演示的TableView和Tab Bar一样。然后你可以使用⌘-Option-Up组合快捷键把图层移动到整个画板前沿，避免被其他图层挡住。这里我们尽量不要选择拖拽来排列，避免不小心拖到一个组到另一个组里去了（老版本的Xcode经常有这鸟问题，一不小心组就拖错了）。<br>试试加些分组到你的iPhone画板里，记得多练习下分组命名。</p>
+<h3 id="矢量工具-Vector-Tool"><a href="#矢量工具-Vector-Tool" class="headerlink" title="矢量工具 - Vector Tool"></a>矢量工具 - Vector Tool</h3><p>画圆啊，矩形啊，线条这些都太low逼了，限制也比较多。接下来我们就试试矢量工具来把刚才这些基本图形变变形。<br>用直线来画图形<br>您可以通过点击创建任意多边形，接下来试着做一个多边形：</p>
+<ol>
+<li>使用快捷键V激活矢量图形工具。</li>
+<li>开始画梯形的边角。</li>
+<li>通过点击起点闭合形状。</li>
+<li>点击编辑按钮 - Edit，拖动各个向量指向重新定位。</li>
+<li>添加填充颜色 - Fill。</li>
+<li>删除边框 - Border。</li>
+</ol>
+<p>非常爽的是，因为Sketch可以让你在事后重新定位每个矢量点，因此不需要你有很大的绘画技巧就可以使用矢量工具。当你拖拽矢量点的适合还有跟Storyboard里面拖拽控件一样，会有对齐提示，只不过这里是红色的实现。</p>
+<h3 id="旋转副本-Rotate-Copies"><a href="#旋转副本-Rotate-Copies" class="headerlink" title="旋转副本 - Rotate Copies"></a>旋转副本 - Rotate Copies</h3><p>如果你以为这里就只是画个梯形简直图样，接着我们就使用旋转副本功能来搞个风车耍耍。旋转副本创建了复制图形并给你创建了一圈，看起来有木有像个花瓣（像个毛）？又在瞎逼逼了，动手试试：</p>
+<ol>
+<li>选择菜单Layer\Paths\Rotate Copies。</li>
+<li>输入3，制作三份副本（算上你画的那个一个是四个）。</li>
+<li>拖动白点，白点位置标示圆心，旋转一圈，看看有没有像银行标志，手里剑，风车啥的。</li>
+</ol>
+<p>Sketch的旋转副本功能会自动创建一个循环副本，至于组合型，我们后面会讲到。</p>
+<h3 id="剪刀-Scissors"><a href="#剪刀-Scissors" class="headerlink" title="剪刀 - Scissors"></a>剪刀 - Scissors</h3><p>位于旋转副本功能上面有个叫做剪刀 - Scissors的菜单选项。这里我们使用它投机倒把，创建一个WatchKit活动环耍耍：</p>
+<ol>
+<li>创建一个圆（记住，使用快捷键O并按住Shift拖动出一个圆圈）。</li>
+<li>取消填充Fill。</li>
+<li>把边框Border的值加大到25。</li>
+<li>选择菜单Layer\Paths\Scissors。</li>
+<li>剪断圆圈的左上部分。</li>
+<li>旋转边框Border栏，点击齿轮Gear按钮。</li>
+<li>在弹出的菜单里选择圆端rounded ends选项。</li>
+</ol>
+<p>这里说明一下，其实一个圆就是通过四个矢量点和四条矢量路径回执而成，所以矢量路径可以随便干掉。<br>小提示：你可以在使用剪刀剪断矢量路径之前用编辑功能拖动任意路径。</p>
+<h3 id="模式和操作棒-Modes-and-Handles"><a href="#模式和操作棒-Modes-and-Handles" class="headerlink" title="模式和操作棒 - Modes and Handles"></a>模式和操作棒 - Modes and Handles</h3><p>Sketch使用四个向量点来绘制圆。你可以画一个圆试试，然后单击工具栏中的编辑Edit看到这些向量点。<br>可以你会怀疑，一个长方形也有四个矢量点。 这特么到底是怎么回事？其实两者之间的区别就在于圆使用的是贝塞尔曲线 - Bezier Curves。<br>简单的说，贝塞尔曲线 - Bezier Curves就是是可以通过控制点弯曲的曲线线条。Sketch称这些控制点叫操作棒 - handles。每个向量点附带有控制每边弧度的两个操作棒。这意味着线的弯曲程度是通过操作棒的各个控制端做决定。听起来比较复杂，但是这里我们需要太深入了解，在Sketch中，您只需拖动操作棒，直到曲线变成你想要的样子就可以了。<br>Sketch方便的定义了基于在需要操作的对象上相对位置的不同的四种模式。</p>
+<ul>
+<li>直线模式 - Straight：这个模式没有操作棒，意味着也没有曲线变化，那当然也就是直线了。</li>
+<li>对称模式 - Mirrored：操作棒具有相同的长度，并形成一条直线，像飞机的机翼，操作棒是相互对称的。所以使用这个模式创建的就是对称曲线。</li>
+<li>不对称模式 - Asymmetric：操作棒任是一条直线，但它们可以有不同的长度。</li>
+<li>不连续模式 - Disconnected：两个操作棒相互独立，既不对称，长度也不相同。</li>
+</ul>
+<p>所以前两种模式都是对称形式，只不过一个是直线，一个是曲线。后两种模式是非对称形式，方便创造任意曲线。<br>实际使用中，创建曲线so easy，只需点击矢量点再选择不连续模式 - Disconnected即可。然后你就可以随便玩了，只要不会让曲线看起来断开就行。<br>在实践中，使曲线是非常简单的。在矢量点只需双击，然后点击断开。然后你像电视天线的兔耳每个把手futz直到曲线看起来正确。<br>要了解更多关于模式和操作棒，这篇文章可以参考。</p>
+<h3 id="贝塞尔曲线理论-Bezier-Curve-Theory"><a href="#贝塞尔曲线理论-Bezier-Curve-Theory" class="headerlink" title="贝塞尔曲线理论 - Bezier Curve Theory"></a>贝塞尔曲线理论 - Bezier Curve Theory</h3><p>其实你并不真的需要知道贝塞尔曲线背后的数学才能使用矢量工具 - 但是我偏不！ ：] 这里我有一个非数学的比喻，可以帮助了解计算机是怎么把这个东西画到屏幕上的。<br>这里原作者使用了不恰当的棒球比赛模型来来举例，里面没有裁判，我也不太了解棒球规则，就不瞎逼逼了，按照我的理解来说。</p>
+<ol>
+<li>绿色boy要直接冲回老家全垒打。</li>
+<li>蓝色boy去当然要截断，冲向绿色boy，由于绿色boy是移动的，所以蓝色boy的走位就是曲线运动。</li>
+<li>然而下路的红色boy心急比较重，不能眼看着绿色boy被干，当然要去KO蓝色boy，所以红色boy的走位也很风骚，也是曲线。</li>
+</ol>
+<p>本垒和红色boy的位置代表矢量点，绿色和蓝色boy的位置就是操作棒。这样红色boy的运动轨迹就是贝塞尔曲线。<br>不知道这么说你们有明白了没有，如果还没明白，这里有个可视化工具，自行解决了，贝塞尔说起来没完没了。</p>
+<h3 id="矢量操作棒上手"><a href="#矢量操作棒上手" class="headerlink" title="矢量操作棒上手"></a>矢量操作棒上手</h3><p>接下来我们动手创建一个地图标记的图标：</p>
+<ol>
+<li>先在画布上拉一个圆。</li>
+<li>边框Border设置为15。</li>
+<li>进入编辑状态（顶部工具条的Edit），选择底部的矢量点。</li>
+<li>把操作模式从对称模式 - Mirrored改为直线模式 - Straight。</li>
+<li>把底部的向量点向下拖动。</li>
+<li>拖动边角 - Corners滑块的值到35（这里根据你圆的半径自行更改，效果一样就行）。</li>
+</ol>
+<p>所谓的地图标记就和上面示意图一样，点和圈之间的关系。后面的教程会对地图标记做更详细的介绍。</p>
+<h3 id="创建自定义图标"><a href="#创建自定义图标" class="headerlink" title="创建自定义图标"></a>创建自定义图标</h3><p>我们来搞个Logo，这里只是用简单的铅笔工具来画线，然后拿矢量工具来描边。<br>接下来我们就搞一个Ray Wenderlich的Logo耍耍。</p>
+<ol>
+<li>这个是Logo的低像素版本。</li>
+<li>把这张Logo扔进Sketch。</li>
+<li>选中图片，在右侧的属性编辑栏把不透明 - Opacity属性改为20%，方便描边。</li>
+<li>使用快捷键Command-Shift-L把图层锁定，防止你不小心拖动了，锁定之后图层名称旁边会有小锁的图标。</li>
+<li>快捷键V激活适量工具。</li>
+<li>点击Logo里图形的每个顶点，半弧形的不用点，直接回到最开始的点来闭合矢量路径。</li>
+<li>在图像路径上双击即可进入编辑状态。</li>
+<li>重新定位没有和图形顶点重合的矢量点，我们要的就是完美（图太小了别忘了放大后再定位）。</li>
+</ol>
+<p>上述步骤搞完了我们现在可以开始搞刚从忽略的弧形了。这里我们将对刚才学到的模式进行活学活用。</p>
+<ol>
+<li>双击起始点，模式会由直线模式 - Straight改为对称模式 - Mirrored。</li>
+<li>但是我们不是使用这个模式，切换到不连续模式 - Disconnected。</li>
+<li>拉着右边的操作棒变换弧形。</li>
+<li>拉着左边的操作棒和第二个矢量点重合，以免第一条直线变形。</li>
+<li>如果第一个矢量点右边的操作棒不能完美的画出Logo对应的弧线，可以开启Logo里弧形另外一边的点，也就是倒数第二个点。</li>
+<li>操作比作类似第一个矢量点的步骤，这里的目的只要把弧形调整完美即可。</li>
+</ol>
+<p>这里运气比较好，RW的Logo只有一条弧线，以此类推，你可以使用更多的点来描出更多复杂的曲线。有兴趣可以去下载Swift的Logo来临摹。过程中可以通过使用快捷键Tab来快速切换每个矢量点。</p>
+<h3 id="结合形状"><a href="#结合形状" class="headerlink" title="结合形状"></a>结合形状</h3><p>想必大家小时候都玩过七巧板，我们除了通过矢量工具，还可以通过使用基本图形的结合来创建独特的形状。<br>在编程中，有运算逻辑AND，OR和XOR，Sketch中也有类似的表达，但是叫法不同，分为融合 - Union，相差 - Subtract，相交 - Intersect，差异 - Difference。</p>
+<h4 id="融合-Union"><a href="#融合-Union" class="headerlink" title="融合 - Union"></a>融合 - Union</h4><p>融合 - Union就是就是两个图形加起来，使用之前的药丸和圆弄个云出来耍耍。</p>
+<ol>
+<li>使用矩形创建一个小药丸。</li>
+<li>创建一个圆。</li>
+<li>移动圆，使其和药丸重合。</li>
+<li>选中两个图形，点击融合 - Union按钮使其融合成一个图形。</li>
+</ol>
+<p>这里是不是很奇怪，两个图形的边框直接就融合到一起了，这就是Sketch的神奇之处。</p>
+<h4 id="相差-Subtract"><a href="#相差-Subtract" class="headerlink" title="相差 - Subtract"></a>相差 - Subtract</h4><p>相差是两个图形重合在一起，一个被另一个包含，所以大集合除去小集合还会有多余的，多余的就是相差的部分，如果不变理解，可以想象为数学减法，结果就是相减之后的部分。<br>虽然之前的地图标记图标看起来已经可以了，但是我们所谓社会主义的接班人，怎么可以这么轻易就完了呢，不行，还得在标记上戳个洞看起来才爽。那就利用刚才介绍的相差的知识这么干：</p>
+<ol>
+<li>创建一个地图标记图标，这次不需要边框，直接取消掉。</li>
+<li>创建一个小圆圈，并拖入到标记里面去。</li>
+<li>操作左侧的图层列表，把圆圈拖动到地图标记图层重叠到一个图层下。</li>
+<li>展开合并生成的新图层。</li>
+<li>确保圆圈图册在地图标记图册上面。</li>
+<li>这是图层列表上地图标记图册右侧会有一个可弹出菜单。</li>
+<li>菜单中选择相差 - Subtract。</li>
+<li>选中圆圈图层，使用小箭头微调位置即可。</li>
+</ol>
+<p>这里总结一下知识点：</p>
+<ul>
+<li>在图层列表里可以拖拽合并生成新的图层</li>
+<li>当你合并图层的时候，你基本不用操心，Sketch会帮你搞定你想要的。</li>
+<li>对于这些过程，你只用保证孔在最前既可以，如果图形小时，重新排列图层位置顺序即可。</li>
+</ul>
+<h3 id="填充、轮廓"><a href="#填充、轮廓" class="headerlink" title="填充、轮廓"></a>填充、轮廓</h3><p>这个节点，本教程为你准备了必须的素材文件。打开之后应该长这样：<br>这套包含了单个示例和矢量图标的素材方便你随时查阅，这些素材都是在教程前后使用的。<br>Tab Bar的图标颜色变化是基于选中状态，但是一些图标有太多的空间，所以颜色变化太微妙。在这种情况下，苹果的人机界面指南推荐使用单独填充版本作为selectedImage。RWDevCon应用的样本都有各自的Tab Bar独立版本。<br>在刚才下载的素描文件里，有一个被称为日历入门的画板，日历图标其中包含几个几何图形合并的而来的图标。就是一些简单的几何图形拼凑而已，前面已经很好的演示过来。<br>下面我们来创建日历图标：</p>
+<ol>
+<li>打开刚才的Sketch文件，在左侧图层列表展开日历入门 - Calendar Starter画板。</li>
+<li>选中日历主体 - Calendar Body部分和分割线 - Separator部分。</li>
+<li>使用相差 - Subtract功能。</li>
+<li>按住Shift再选中Right Hole图层，还是使用相差 - Subtract功能。</li>
+<li>同理，再把Left Hole图层也重复上述步骤。</li>
+<li>接着按住Shift再选中Right Ring图层使用融合 - Union功能。</li>
+<li>同理，Left Ring图层也这么照做。</li>
+</ol>
+<p>通过相差和融合操作，现在的日历入门的画板上就只剩一个包含了刚才所有图层的单图层了，一切都看着泛绿。如果按照上述步骤操作之后和效果图有什么出入，可以参照画板下方的实例对照。<br>现在，来搞一个填充的图标。是时候重新调整一下，让其看起来像示例版本了。</p>
+<ol>
+<li>在画布上找到日历填充 - Calendar Fill。</li>
+<li>在图层列表里展开日历填充 - Calendar Fill。</li>
+<li>再展开日历主体 - Calendar Body图层，并选择分割线 - Separator图层。</li>
+<li>把分割线 - Separator图层高度设置为35即可。</li>
+</ol>
+<p>调整分割线高度的时候，Sketch不会有明确的高度指示，所以你可以选择直接输入数值。</p>
+<h3 id="圆形轮廓头像"><a href="#圆形轮廓头像" class="headerlink" title="圆形轮廓头像"></a>圆形轮廓头像</h3><p>在应用中，往往用户头像都圆形边框的。为了达到这种效果，我们将使用蒙版功能，这和相差功能很类似。但是，这不是从内掏空，而是从外延切掉。<br>下面我们来创建一个头像：</p>
+<ol>
+<li>在左侧的图层列表里展开Greg Before画板。</li>
+<li>在画板里画个圆出来，圆要足够大，大到把整张脸都能遮住。</li>
+<li>选择名为greg的图层和刚才创建好的圆形图层。</li>
+<li>确保头像在蒙版的下面。</li>
+<li>点击Mask按钮使用蒙版功能。</li>
+<li>展开新合成的图层组 - greg，然后选择蒙版图层 - Mask。</li>
+<li>给蒙版图层加上边框，使用四个方向键来移动蒙版位置。</li>
+</ol>
+<p>跟相差功能在顶部刚刚相反，蒙版需要在图层底部。</p>
+<h3 id="图像导出"><a href="#图像导出" class="headerlink" title="图像导出"></a>图像导出</h3><p>在Sketch窗口的右下角有导图功能 - Make Exportable。<br>如果需要导出多个图层，有以下两种方法：</p>
+<ul>
+<li>组 - Group：使用组导出，会把多个图层合并成单一图层导出。</li>
+<li>画板 - Artboard：画板同组一样，会把多个图层导出成单一图层，图片大小根据画板的画布大小确定。</li>
+</ul>
+<p>在导出之前请先确定好画板的宽高，这些参数是基于1x的图片大小。</p>
+<ul>
+<li>小提示：需要缩放的话可以使用缩放按钮，点击Mask旁边的Scale按钮即可，缩放功能是等比例，不用像下面这样分别调整。</li>
+</ul>
+<h3 id="PNG"><a href="#PNG" class="headerlink" title="PNG"></a>PNG</h3><p>Sketch可以很容易的输出各种尺寸的图片：</p>
+<ol>
+<li>在窗口右下方使用图层输出 - Make Exportable。</li>
+<li>点击加号+增加一个@2x输出。</li>
+<li>再点击加号+增加一个@3x输出。</li>
+<li>最后点击导出Export按钮把三张图片导出。</li>
+</ol>
+<h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><p>虽然每个图像都可以导出@2x和@3x尺寸的图，但是我们的Xcode早就支持矢量图像，而且还是PDF格式的矢量图形，这就好比带了图像的SVG一样。</p>
+<ol>
+<li>在窗口右下方使用图层输出 - Make Exportable。</li>
+<li>保持1x尺寸。</li>
+<li>选择PDF格式导出。</li>
+</ol>
+<p>接下来我们把PDF格式的矢量图形添加到Xcode的素材管理分类 - Asset Catalog里。</p>
+<ol>
+<li>在Xcode里打开Images.xcassets。</li>
+<li>创建一个新的图片集合 - New Image Set。</li>
+<li>在属性检查器 - Attributes Inspector中，把缩放系数 - Scale Factors从Multiple改为Single Vector。</li>
+<li>把你的PDF扔进去即可。</li>
+</ol>
+<p>有了这个矢量的PDF文件，Xcode会自动生成@2x和@3x图，这样不仅省去了PNG图片还减少了图片资源众多管理，命名的麻烦，有没有很爽的样子？</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>Sketch的入门使用就介绍到这里，教程中所使用的工程文件可以在这里下载。<br>面对强大的Sketch，我们还有很多需要学习的地方，此后如有问题不能解决可以直接上官方文档。或者多看看这些博客和视频。<br>你要是喜欢我这里有些矢量图标的素材，随便下。<br>最后，非常感谢你们看完这边教程，要是有什么不足或者意见，欢迎大家一起留言讨论。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div>
+  
+    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-star"></i>感谢您的阅读-------------</div>
+  
+</div>
+
+      </div>
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>感觉有用就请博主喝杯奶茶吧</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpeg" alt="Elkins Zhao WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpeg" alt="Elkins Zhao Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Sketch/" rel="tag"># Sketch</a>
+          
+            <a href="/tags/教程/" rel="tag"># 教程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/01/18/解决apache启动错误-httpd-Could-not-reliably-determine/" rel="next" title="解决apache启动错误'httpd:Could not reliably determine...'">
+                <i class="fa fa-chevron-left"></i> 解决apache启动错误'httpd:Could not reliably determine...'
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/27/关于-HTTP-状态码的说明/" rel="prev" title="关于 HTTP 状态码的说明">
+                关于 HTTP 状态码的说明 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://i.loli.net/2017/09/08/59b23d2489594.jpg"
+               alt="Elkins Zhao" />
+          <p class="site-author-name" itemprop="name">Elkins Zhao</p>
+           
+              <p class="site-description motion-element" itemprop="description">Game / Journey / Coding / Movie / Music</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/EZElkins" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/elkins_9267" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/bluesky9267" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                    
+                      Weibo
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.instagram.com/panderwonder/?hl=zh-cn" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                    
+                      Instagram
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+                  
+                    <i class="fa fa-fw fa-youtube"></i>
+                  
+                    
+                      YouTube
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板-Templates"><span class="nav-number">2.</span> <span class="nav-text">模板 - Templates</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#画板-Artboards"><span class="nav-number">3.</span> <span class="nav-text">画板 - Artboards</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制，粘贴"><span class="nav-number">4.</span> <span class="nav-text">复制，粘贴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基础形状-Basic-Shapes"><span class="nav-number">5.</span> <span class="nav-text">基础形状 - Basic Shapes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#制作图形-Styling-a-Shape"><span class="nav-number">6.</span> <span class="nav-text">制作图形 - Styling a Shape</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图层列表-Layer-List"><span class="nav-number">7.</span> <span class="nav-text">图层列表 - Layer List</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矢量工具-Vector-Tool"><span class="nav-number">8.</span> <span class="nav-text">矢量工具 - Vector Tool</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#旋转副本-Rotate-Copies"><span class="nav-number">9.</span> <span class="nav-text">旋转副本 - Rotate Copies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#剪刀-Scissors"><span class="nav-number">10.</span> <span class="nav-text">剪刀 - Scissors</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模式和操作棒-Modes-and-Handles"><span class="nav-number">11.</span> <span class="nav-text">模式和操作棒 - Modes and Handles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贝塞尔曲线理论-Bezier-Curve-Theory"><span class="nav-number">12.</span> <span class="nav-text">贝塞尔曲线理论 - Bezier Curve Theory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矢量操作棒上手"><span class="nav-number">13.</span> <span class="nav-text">矢量操作棒上手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建自定义图标"><span class="nav-number">14.</span> <span class="nav-text">创建自定义图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结合形状"><span class="nav-number">15.</span> <span class="nav-text">结合形状</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#融合-Union"><span class="nav-number">15.1.</span> <span class="nav-text">融合 - Union</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相差-Subtract"><span class="nav-number">15.2.</span> <span class="nav-text">相差 - Subtract</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#填充、轮廓"><span class="nav-number">16.</span> <span class="nav-text">填充、轮廓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圆形轮廓头像"><span class="nav-number">17.</span> <span class="nav-text">圆形轮廓头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图像导出"><span class="nav-number">18.</span> <span class="nav-text">图像导出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PNG"><span class="nav-number">19.</span> <span class="nav-text">PNG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PDF"><span class="nav-number">20.</span> <span class="nav-text">PDF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">21.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2014 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Elkins Zhao</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共29.1k字</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
